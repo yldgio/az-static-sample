@@ -23,9 +23,9 @@
             My Discounts
           </a>
         </button>
-        <button class="button" aria-label="My Discounts">
+        <button class="button" aria-label="github repo">
           <a
-            href="https://github.com/johnpapa/shopathome"
+            href="https://github.com/yldgio/az-static-sample"
             target="_blank"
             rel="noopener noreferrer"
           >
