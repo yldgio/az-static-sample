@@ -20,8 +20,8 @@ export default {
     // actions let us get to ({ state, getters, commit, dispatch }) {
     async getDiscountsAction({ commit }) {
       try {
-        const response = await axios.get(`${API}/discounts`);
-        const discounts = parseList(response);
+        const response = await axios.get(`${API}/people?sc_device=json`);
+        const discounts = parseList(response).data;
         commit(GET_DISCOUNTS, discounts);
         return discounts;
       } catch (error) {

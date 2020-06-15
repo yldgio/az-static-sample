@@ -36,7 +36,7 @@ export default {
   <div class="container columns">
     <div v-if="discounts" class="column is-8">
       <ListHeader
-        title="My Discounts"
+        title="People"
         @refresh="getDiscounts"
         :showAdd="false"
       ></ListHeader>
@@ -53,9 +53,11 @@ export default {
           <div class="card">
             <div class="card-content">
               <div class="content discount-grid">
-                <label>Store:</label><span>{{ discount.store }}</span>
-                <label>Discount:</label><span>{{ discount.percentage }}%</span>
-                <label>Code:</label><span>{{ discount.code }}</span>
+                <label>name:</label><span>{{ discount.full_name }}</span>
+                <label>email:</label><span>{{ discount.email }}%</span>
+                <label>phone:</label><span>{{ discount.phone }}</span>
+                <label>role:</label><span>{{ discount.role }}</span>
+                <img :src="discount.profile_image" />
               </div>
             </div>
           </div>

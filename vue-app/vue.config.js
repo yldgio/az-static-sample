@@ -5,7 +5,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://localhost:7071',
+        target: 'http://ibl-dev-02.westeurope.cloudapp.azure.com',
         ws: true,
         changeOrigin: true,
       },
